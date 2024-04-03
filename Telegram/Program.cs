@@ -7,7 +7,7 @@ namespace Telegram
 {
     class Program
     {
-        private static string token = "6535246011:AAHWbrswFf-XfZgQtC6kg3bM2MtWqgcZalc";
+        private static string token = "Telegram bot token";
         private static TelegramBotClient client;
         private static bool sessionActive;
 
@@ -53,7 +53,7 @@ namespace Telegram
                             replyMarkup: GetButtons(sessionActive));
                         break;
                     case "Schedule":
-                        string[] koshes = { "Dima", "Olya", "Josh" };
+                        string[] koshes = { "Name1", "Name2", "Name3" };
                         DateTime today = DateTime.Now;
 
                         for (int i = 0; i < 7; i++)
